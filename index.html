@@ -1,9 +1,40 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <p>Paragraph</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Random Anime Recommendation" />
+  <meta name="keywords" content="anime, random, API" />
+  <meta name="author" content="yi.zhou" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <title>Random Anime Recommender</title>
+</head>
+<body>
+  <script src="./js/script.js"></script>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Random Anime Recommender</span>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <img src="./images/anime2.jpg" alt="anime" />
+        <p class="page-content-1">Click the button below to get a random anime recommendation!</p>
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="showAnime()"
+          type="button"
+        >
+          SHOW ME AN ANIME
+        </button>
+        <br /><br />
+        <div class="page-content-answer" id="result"></div>
+      </div>
+    </main>
+  </div>
+</body>
 </html>
